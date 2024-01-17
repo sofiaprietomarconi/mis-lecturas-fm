@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Quicksand:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Inicio css barra de navegacion */
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #455049;
+}
+
+.lista{
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "logo logo sobremi reseñas"
+    "logo logo autores contacto";
+}
+
+
+.logo {
+    background-image: url("../imagenes/foto\ fabi2.png") ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: logo;
+    font-family: 'Dancing Script', cursive;
+    color:white;
+    font-size:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi {
+    background-color: #A0A99F;
+    grid-area: sobremi;
+}
+
+.reseñas {
+    background-color:#BDBBB6;
+    grid-area: reseñas;
+}
+
+.autores {
+    background-color: #D1C6C3;
+    grid-area: autores;
+}
+
+.contacto {
+    background-color:#73877B;
+    grid-area: contacto;
+}
+
+.hijo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+@media (max-width: 805px ) {
+    .lista {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "logo logo"
+        "sobremi reseñas"
+        "autores contacto";
+    }
+}
+
+    @media (max-width: 400px ) {
+        .lista{
+            grid-template-columns: 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "logo"
+            "sobremi"
+            "reseñas"
+            "autores"
+            "contacto";
+        }
+    }
+/* fin css barra de navegacion*/
+
+/*inicio css footer*/
+
+.footer{
+    background-color: black;
+    color:white;
+}
+
+.nombre{
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.social{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.copy{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* inicio css sobremi*/
+
+.navpagina{
+    background-color:#73877b ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #455049;
+}
+
+.listapagina {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color:white;
+    height: 3rem;
+}
+
+
+.logopagina {
+    font-family: 'Dancing Script', cursive;
+}
+
+.hijopagina {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.titulo {
+    display:flex;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #73877B;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+
+}
+
+/* fin css sobremi*/
+
+/* inicio css autores*/
+
+.titulo {
+    display:flex;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #a0a99f;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.explicacion {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* fin css autores*/
+
+/*inicio css reseñas*/
+
+.elpoder {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.penelope {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.susurro {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ver {
+    color: black;
+}
+
+/* fin css reseñas/
+
+/*inicio css contacto*/
+
+.whatsappcontacto { 
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.ubicacion {
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.instagramcontacto {
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*fin css contacto*/
