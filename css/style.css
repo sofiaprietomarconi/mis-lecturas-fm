@@ -106,6 +106,7 @@ a:hover {
 .footer{
     background-color: black;
     color:white;
+    text-align: center;
 }
 
 .nombre{
@@ -121,7 +122,7 @@ a:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* inicio css sobremi*/
+/* inicio css barra de navegacion flex */
 
 .navpagina{
     background-color:#73877b ;
@@ -140,7 +141,11 @@ a:hover {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 15rem;
     color:white;
     height: 3rem;
 }
@@ -154,28 +159,43 @@ a:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
+/*fin css barra de navegacion flex */
+
+/* inicio css sobremi*/
+
+.sobremigrids {
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+"fotosobremi "
+"presentacion";
+}
+
+.fotosobremi {
+    grid-area: fotosobremi;
+}
+
+.presentacion {
+    grid-area: presentacion;
+}
+
+
 .titulo {
     display:flex;
     font-family: 'Quicksand', sans-serif;
-    background-color: #73877B;
+    background-color: white;
     flex-direction: row;
     justify-content: space-around;
-    color: white;
-
+    color:#73877B;
+    margin: 10px;
 }
 
 /* fin css sobremi*/
 
 /* inicio css autores*/
-
-.titulo {
-    display:flex;
-    font-family: 'Quicksand', sans-serif;
-    background-color: #a0a99f;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
 
 .explicacion {
     font-family: 'Quicksand', sans-serif;
@@ -185,16 +205,45 @@ a:hover {
 
 /*inicio css reseñas*/
 
+.respagina { 
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "elpoder penelope susurro";
+    gap: 2rem;
+
+}
 .elpoder {
     font-family: 'Quicksand', sans-serif;
+    grid-area: elpoder;
+   background-color:#73877B ; 
+   color: white;
+   margin: 10px;
+   text-align: center;
+}
+
+.imgelpoder {
+    overflow: hidden;
 }
 
 .penelope {
     font-family: 'Quicksand', sans-serif;
+    grid-area: penelope;
+    background-color:#73877B ; 
+    color: white;
+    margin: 10px;
+    text-align: center;
 }
 
 .susurro {
     font-family: 'Quicksand', sans-serif;
+    grid-area: susurro;
+    background-color:#73877B ; 
+    color: white;
+    margin: 10px;
+    text-align: center;
 }
 
 .ver {
