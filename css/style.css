@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-/* Inicio css barra de navegacion */
+/* Inicio css barra de navegacion grids */
 
 
 a{
@@ -21,6 +21,7 @@ a:hover {
 .lista{
     height: 100vh;
     display:grid;
+    gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -72,6 +73,8 @@ a:hover {
     color:white;
 }
 
+/* media queries index.html */ 
+
 @media (max-width: 805px ) {
     .lista {
         grid-template-columns: 1fr 1fr;
@@ -95,7 +98,8 @@ a:hover {
             "contacto";
         }
     }
-/* fin css barra de navegacion*/
+
+/* fin css barra de navegacion grids*/
 
 /*inicio css footer*/
 
