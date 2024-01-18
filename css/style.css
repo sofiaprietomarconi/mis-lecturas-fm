@@ -218,36 +218,55 @@ a:hover {
 .elpoder {
     font-family: 'Quicksand', sans-serif;
     grid-area: elpoder;
-   background-color:#73877B ; 
+   background-color:#a79b9a ; 
    color: white;
    margin: 10px;
    text-align: center;
 }
 
 .imgelpoder {
-    overflow: hidden;
+    margin: 10px;
 }
 
 .penelope {
     font-family: 'Quicksand', sans-serif;
     grid-area: penelope;
-    background-color:#73877B ; 
+    background-color:#928f9e ; 
     color: white;
     margin: 10px;
     text-align: center;
+}
+
+.imgpenelope {
+    margin: 10px;
 }
 
 .susurro {
     font-family: 'Quicksand', sans-serif;
     grid-area: susurro;
-    background-color:#73877B ; 
+    background-color:#8f947e ; 
     color: white;
     margin: 10px;
     text-align: center;
 }
 
+.imgsusurro {
+    margin: 10px;
+}
+
 .ver {
     color: black;
+}
+
+@media (max-width: 953px ) {
+    .respagina {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "elpoder"
+        "penelope"
+        "susurro";
+    }
 }
 
 /* fin css reseñas/
